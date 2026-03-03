@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Youth Ministry Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 700px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0055a5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #002244;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #002244;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wesleyan Church of Papua New Guinea</h1>
+    <p>National Youth Ministry - Registration</p>
+</header>
+
+<section>
+    <h2>Youth Registration Form</h2>
+
+    <form action="mailto:youthministry@wesleyanpng.org" 
+          method="post" 
+          enctype="multipart/form-data">
+
+        <label>Given Name</label>
+        <input type="text" name="given_name" required>
+
+        <label>Surname</label>
+        <input type="text" name="surname" required>
+
+        <label>Local Church</label>
+        <input type="text" name="local_church" required>
+
+        <label>District</label>
+        <input type="text" name="district" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <hr style="margin:25px 0;">
+
+        <h2>Your Concern Form</h2>
+
+        <label>Upload Attachment (PDF, JPG, PNG only)</label>
+        <input type="file" name="attachment" 
+               accept=".pdf,.jpg,.jpeg,.png">
+
+        <p class="note">Allowed file types: PDF, JPG, PNG</p>
+
+        <label>Comments (Maximum 100 words)</label>
+        <textarea name="comments" rows="5" 
+                  maxlength="700" 
+                  placeholder="Write your concern here (maximum 100 words)..."></textarea>
+
+        <button type="submit" class="btn">Submit Registration</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Wesleyan Church of Papua New Guinea - National Youth Ministry</p>
+</footer>
+
+</body>
+</html>
